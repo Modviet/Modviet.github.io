@@ -1,0 +1,77 @@
+@media screen and (max-width:900px) {
+    #nav-bar .nav-bar-heading{
+        display: none;
+    }
+
+    #nav-bar .nav-bar-heading + *{
+        border-left-width: 1px;
+    }
+}
+
+@media screen and (max-width:900px){
+    #about {
+        background: none;
+    }
+
+    #about .container {
+        grid-template-columns: 1fr;
+    }
+
+    #about #personal-info{
+        background-color: var(--light-gray);
+    }
+
+    #target,
+    #personal-info {
+        padding : 40px 30px;
+    }
+}
+
+@media screen and(max-width:1200px) {
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-item {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 15px;
+        border-bottom: 1px solid var(--yellow);
+        padding-bottom: 15px;
+    }
+
+    .certificate-item + .certificate-item::before {
+        display: none;
+    }
+
+    .certificate-separator{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    .project-charter {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .project-charter .area-timeline {
+        grid-row: 1/5;
+        grid-column: -1/-2; 
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .project-charter {
+        grid-template-columns: 1fr;
+    }
+
+    .project-charter .area-timeline {
+        grid-row:auto;
+        grid-column: auto;
+    }
+
+    .project-charter .area-scope {
+        grid-row: 2/3;
+    }
+}
